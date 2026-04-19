@@ -35,9 +35,9 @@ A showcase of layouts, components, and features
 >
   <!-- You can place content _inside_ of rectangles! -->
   <div w-full h-full relative flex flex-col items-end justify-end p-4 text-white text-right>
-    <h3 text-5xl>
+    <p text-3xl font-300>
       Your Event
-    </h3>
+    </p>
     <h4 text-md font-mono>
       2025-01-15
     </h4>
@@ -52,7 +52,7 @@ A showcase of layouts, components, and features
 layout: image-right
 # Landsat 8 Image of Ayon Island
 # https://unsplash.com/photos/B-bXvd0R1bM
-image: https://images.unsplash.com/photo-1722083855371-0d5a25647ce6
+image: /images/theme/landsat8-ayon-island.jpg
 class: image-narrow
 ---
 
@@ -74,7 +74,7 @@ class: image-narrow
 layout: image-right
 # Landsat 9 Image of Kangerdlugssuaq Glacier, Greenland
 # https://unsplash.com/photos/PgL1p8TBGNQ
-image: https://images.unsplash.com/photo-1722080768196-8983bbbb5c0f
+image: /images/theme/landsat9-kangerdlugssuaq-greenland.jpg
 class: image-narrow
 ---
 
@@ -108,7 +108,7 @@ class: image-narrow
 layout: image-left
 # Landsat 8 image of Klyuchevskaya, Kamchatka Peninsula, Siberia, Russia
 # https://unsplash.com/photos/yMcULenXoik
-image: https://images.unsplash.com/photo-1744968776900-311abae36ead
+image: /images/theme/landsat8-klyuchevskaya-kamchatka.jpg
 class: image-narrow
 ---
 
@@ -132,7 +132,7 @@ Use `v-mark` + [Rough Notation](https://roughnotation.com/) to draw attention or
 layout: image-right
 # Fjords in southeastern coast of Greenland
 # https://unsplash.com/photos/blue-white-and-red-abstract-painting-3O2HJPzgkQY
-image: https://images.unsplash.com/photo-1579818276659-2943e3cd4b30
+image: /images/theme/blue-white-red-abstract-painting.jpg
 ---
 
 # Lists & Styling
@@ -155,7 +155,7 @@ image: https://images.unsplash.com/photo-1579818276659-2943e3cd4b30
 layout: image-left
 # Landsat 9 Image of Prudhoe Bay, Alaska
 # https://unsplash.com/photos/a-satellite-image-of-a-body-of-water-F8BGGoayfeQ
-image: https://images.unsplash.com/photo-1722082839868-d900d1a07e69
+image: /images/theme/satellite-image-body-of-water.jpg
 class: image-narrow
 ---
 
@@ -226,33 +226,28 @@ def process_data(input):
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1722083854982-2f1516cf263c
+image: /images/theme/landsat9-western-guinea-bissau.jpg
 ---
 
-# Table Styling
+## Table Styling
 
 <div mt-5 />
 
 Tables are styled with brand colors and clean borders:
 
-| Feature | openEO | TiTiler |
-| --- | --- | --- |
-| **Data Model** | Multi-dimensional arrays | Rasters |
-| **Processing** | Batch (async) | Dynamic (sync) |
-| **Infrastructure** | Heavy (dask) | Lightweight |
-| **API** | Graph-based | Function-based |
-
-**Features:**
-- Orange header text
-- Clean borders
-- Proper spacing
-- Alternating row colors
+| Feature            | openEO                   | TiTiler        |
+| ------------------ | ------------------------ | -------------- |
+| **Data Model**     | Multi-dimensional arrays | Rasters        |
+| **Processing**     | Batch (async)            | Dynamic (sync) |
+| **Infrastructure** | Heavy (dask)             | Lightweight    |
+| **API**            | Graph-based              | Function-based |
 
 <LogoHorNegMono position="bottom-right" />
 
 ---
 layout: iframe-right
 url: https://developmentseed.org/
+scale: 0.5  # tip: use scale to avoid mobile-layout
 ---
 
 # Iframe Layout
@@ -278,7 +273,7 @@ layout: image-left
 class: image-narrow
 # Landsat 9 Image of Taklimakan Desert, China
 # https://unsplash.com/photos/KGzlTHjkyZM
-image: https://images.unsplash.com/photo-1722080767795-af488166033d
+image: /images/theme/landsat9-taklimakan-desert-china.jpg
 ---
 
 # Decorative Rectangles
@@ -351,7 +346,7 @@ Animate code transitions smoothly
 layout: image-right
 # Sentinel-2A image of the Southern Tibetan Plateau
 # image: https://images.unsplash.com/photo-1536227019771-b2eac2dd6121
-image: https://images.unsplash.com/photo-1744968777300-210d3bb46817
+image: /images/theme/sentinel2a-southern-tibetan-plateau.jpg
 class: image-narrow
 ---
 
@@ -437,7 +432,7 @@ class DataProcessor:
 layout: cover
 # Landsat 9 image of Bangladesh Coast
 # https://unsplash.com/photos/eGGENWtikd0
-background: https://images.unsplash.com/photo-1722083854850-4a24185465ac
+background: /images/theme/landsat9-bangladesh-coast.jpg
 class: px-10
 ---
 
@@ -472,7 +467,7 @@ await fetchRepositories();
 layout: image-left
 # Landsat 8 image of the Ord River in Australia
 # https://unsplash.com/photos/2BThgnOYoIc
-image: https://images.unsplash.com/photo-1744968776986-3deb08e40a24
+image: /images/theme/landsat8-ord-river-australia.jpg
 class: image-narrow
 ---
 
@@ -492,7 +487,7 @@ pie title How I spent time preparing for my talk
 layout: image-right
 # Landsat 9 Image of Western Guinea-Bissau
 # https://unsplash.com/photos/ZuN44o80Bn0
-image: https://images.unsplash.com/photo-1722083854982-2f1516cf263c
+image: /images/theme/landsat9-western-guinea-bissau.jpg
 class: image-narrow
 ---
 
@@ -540,7 +535,7 @@ Dynamic QR codes powered by [`slidev-addon-qrcode`](https://github.com/kravetson
 layout: title
 # Landsat 9 image of Apostle Islands, Lake Superior
 # https://unsplash.com/photos/j7HqdQqn7Jo
-image: https://images.unsplash.com/photo-1722080767251-aad7fa1796d3
+image: /images/theme/landsat9-apostle-islands-lake-superior.jpg
 ---
 
 # Thank you!
