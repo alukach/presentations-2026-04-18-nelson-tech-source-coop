@@ -9,6 +9,7 @@ drawings:
   enable: false
 transition: slide-left
 mdc: true
+favicon: /meta/favicon.png
 addons:
     - slidev-addon-qrcode
 
@@ -69,6 +70,30 @@ class: image-narrow
 
 <!-- Also supports notes that are displayed in the presenter view. Just make sure that the comment is places at the END of the slide (after logo/rectangles) -->
 
+
+---
+layout: default
+---
+
+# Typography
+
+# Section heading (H1)
+
+## Section heading (H2)
+
+### Subsection heading (H3)
+
+#### Fourth-level heading (H4)
+
+Body copy uses the **Antarctica VAR** variable font. Inline styles include **bold**, *italic*, `inline code`, and [links](https://developmentseed.org).
+
+> Blockquotes carry an orange accent, ideal for pull-quotes or callouts.
+
+```
+Code block
+```
+
+<LogoHorNegMono position="bottom-right" />
 
 ---
 layout: image-right
@@ -263,7 +288,7 @@ Perfect for:
 
 **Note:**
 
-* Seems to open website in a mobile-layout
+* **Tip:** use `scale: 0.5` in metadata to avoid mobile-layout
 * Doesn't work with github.com! 😿
 
 <LogoHorNegMono position="bottom-right" />
